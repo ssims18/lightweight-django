@@ -17,3 +17,13 @@ Set the `ALLOWED_HOSTS` environmental variable to validate incoming HTTP HOST he
 export ALLOWED_HOSTS=localhost,example.com
 python hello.py runserver
 ```
+
+### Template File
+
+Hello.py is saved as a simple Django project template file. To use with `startproject`, add the `--template` argument.
+
+```bash
+django-admin.py startproject foo --template=project_name
+```
+
+This should create a _foo.py_ file inside of a _foo_ directory.
